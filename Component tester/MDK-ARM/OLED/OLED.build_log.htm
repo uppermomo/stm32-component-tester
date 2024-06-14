@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: momo 8615889965784, bjtu, LIC=76F5U-SVFV6-QDFKD-8JN6B-GT952-2X3LF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.15.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\86158\Documents\stm32\OLED 5.14\OLED origin\OLED\MDK-ARM\OLED.uvprojx
+Project File Date:  05/16/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'OLED'
+compiling main.c...
+../Core/Src/main.c(312): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i,j;
+../Core/Src/main.c(422): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Res_1 = ( ( (float)adc_values[1] ) / ( (float)adc_values[0] )-1.0)*708;
+../Core/Src/main.c(426): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Res_2 = (int)(( ( (float)adc_values[1] ) / ( (float)adc_values[0] )-1.0)*475000);
+../Core/Src/main.c(455): warning:  #177-D: variable "Esr"  was declared but never referenced
+  	float Res,Esr;
+../Core/Src/main.c(565): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Esr = ( ( (float)adc_values[1] ) / ( (float)adc_values[0] )-1.0)*708;
+../Core/Src/main.c(551): warning:  #550-D: variable "adcget1"  was set but never used
+  	uint32_t adcget1, adcget2, adc_values[2];
+../Core/Src/main.c(551): warning:  #550-D: variable "adcget2"  was set but never used
+  	uint32_t adcget1, adcget2, adc_values[2];
+../Core/Src/main.c(552): warning:  #177-D: variable "Res"  was declared but never referenced
+  	float Res,Esr;
+../Core/Src/main.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=17448 RO-data=3520 RW-data=408 ZI-data=1360  
+FromELF: creating hex file...
+"OLED\OLED.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_OLED
+  D:/Keil_v5/ARM/PACK/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
